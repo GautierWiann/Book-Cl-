@@ -121,7 +121,7 @@ export default function HomeScreen() {
                 id={styles.secondScreen}
                 ref={refDown}
             >
-                <Header header={header} />
+                <Header header={header} show={false}/>
 
                 <div id={styles.parallax2} ref={ref}>
                     <div ref={refCard1} className={styles.card} id={styles.first}><a href="/contact" style={{ textDecoration: "none", color: 'black' }}><CardHomeChoice title="contact" url={"https://res.cloudinary.com/dpxxyz9ra/image/upload/v1698656593/msalxt9o9g20z7kyncxp.png"} desc="La première étape pour mener à bien votre projet photo" /></a></div>

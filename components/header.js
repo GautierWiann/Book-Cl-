@@ -26,7 +26,7 @@ export default function Header(props) {
                     <UseAnimations animation={instagram} size={35} className={styles.icon} />
                     {/* <UseAnimations animation={facebook} size={35} className={styles.icon} /> */}
                     <UseAnimations animation={linkedin} size={35} className={styles.icon} />
-                    <UseAnimations animation={menu2} size={35} className={styles.icon} id={styles.menu} onClick={() => setShow(!show)} />
+                    {props.show && <UseAnimations animation={menu2} size={35} className={styles.icon} id={styles.menu} onClick={() => setShow(!show)} />}
                 </div>
             </div>
            { show && <div id={styles.menuDiv}>

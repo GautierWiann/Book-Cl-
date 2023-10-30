@@ -67,7 +67,7 @@ export default function PortfolioScreen() {
             <Head>
                 <title>Portfolio</title>
             </Head>
-            <Header header={1} />
+            <Header header={1} show={true} />
             {modalOpen && (
                 <ModalPic imageSrc={image} closeModal={closeModal} forward={forward} back={back} />
             )}

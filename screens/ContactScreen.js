@@ -38,7 +38,7 @@ export default function ContactScreen() {
             <Head>
                 <title>Contact</title>
             </Head>
-            <Header header={1} />
+            <Header header={1} show={true}/>
             <div className={styles.slides}>
                 <div className={styles.glassmorph}>
                     <div className='row' >
