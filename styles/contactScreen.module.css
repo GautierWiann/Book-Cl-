@@ -5,8 +5,8 @@
         top: 16vh !important;
         height: 60vh !important;
         max-width: 450px;
-        width:80vw !important;
-       left: 10vw !important;
+        width:90vw !important;
+       left: 5vw !important;
        padding: 3vh 0vw 3vh 6vw !important;
     }
 
@@ -50,7 +50,9 @@
         font-size: 17px !important;
       }
       
-    
+    .formGroup {
+        width: 45% !important;
+    }
     
     #container{
         height: 100vh;

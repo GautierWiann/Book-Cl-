@@ -1,11 +1,12 @@
 
+@import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
+
 
 #container {
     overflow-x: hidden;
     width: 100vw;
     min-height: 100vh;
-    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%); 
-   
+    background: linear-gradient(315deg, #202f46 0%, #12100e 74%);
     /* fffcf2 */
 }
 
@@ -14,6 +15,8 @@
     width: 100%;
     height: 55vh;
     border-radius: 4px;
+ box-shadow: rgba(235, 235, 237, 0.561) 0px 4px 10px, rgba(235, 235, 237, 0.186) 0px 0px 18px;
+
 }
 
 .image {
@@ -23,19 +26,30 @@
     height: 55vh;
     object-fit: cover;
     border-radius: 4px;
-    box-shadow: rgba(235, 235, 237, 0.561) 0px 4px 10px, rgba(235, 235, 237, 0.186) 0px 0px 18px;
-}
+   }
 
 .row {
     width : 105vw; 
     margin-top :5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: end;
+    text-align: justify;
+    color: #fdfffc;
+    font-family: "Comfortaa" ;
 }
 
 @media only screen and (max-width: 770px) {
     .row {
-       display: flex;
-       flex-direction: row;
-       justify-content: center;
+       font-size: 14px;
+    }
+  
+  }
+
+  @media only screen and (min-width: 770px) {
+    .row {
+       font-size: 18px;
     }
   
   }

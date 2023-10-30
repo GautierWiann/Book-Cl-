@@ -1,3 +1,8 @@
+
+@import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
+
+
+
 @media only screen and (max-width: 1024px) { 
     .container{
         width: 30vh !important;
@@ -89,6 +94,7 @@
 
 
 .title {
+    font-family: "Comfortaa" ;
     border: 0.4vh solid #000;
     font-size: 24px;
     font-weight: 700;
