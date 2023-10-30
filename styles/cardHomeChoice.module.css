@@ -1,32 +1,49 @@
 @media only screen and (max-width: 1024px) { 
     .container{
-        width: 70vw !important;
-        height: 70vw !important;
-        margin-top: 5vh;
+        width: 30vh !important;
+        height: 30vh !important;
+        
     }
 
-    .container:hover {
-        height: 95vw !important;
-        width: 85vw !important;
-    }
 
     .title {
-        font-size: 17px !important;
-        font-weight: 600 !important;
+        font-size: 15px !important;
+        font-weight: 700 !important;
+        padding: 2vh 3vw !important;
     }
+    
+    
+    .glassmorph {
+        height: 25% !important;
+    }
+}
+
+@media only screen and (min-width: 1024px) { 
+    .container:hover {
+        height: 80vh;
+        width: 35vw;
+    }
+    
+    .container:hover .title {
+        font-size: 30px;
+        margin-bottom: 31%;
+    }
+    
     .container:hover .desc {
         display: block;
         opacity: 1;
-        font-size: 16px !important;
-        margin-bottom: 12% !important;
+        font-size: 24px;
+        margin-bottom: 15%;
     }
-
-    .container:hover .title {
-        font-size: 20px !important;
-        margin-bottom: 34% !important;
+    
+    .container:hover .glassmorph {
+        background: rgba(245, 245, 251, 0.864);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+        height: 33%;
     }
-
 }
+
 .container {
     background-position: center;
     background-repeat: no-repeat;
@@ -109,26 +126,3 @@
 }
 
 
-.container:hover {
-    height: 80vh;
-    width: 35vw;
-}
-
-.container:hover .title {
-    font-size: 30px;
-    margin-bottom: 31%;
-}
-
-.container:hover .desc {
-    display: block;
-    opacity: 1;
-    font-size: 24px;
-    margin-bottom: 15%;
-}
-
-.container:hover .glassmorph {
-    background: rgba(245, 245, 251, 0.864);
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-    height: 33%;
-}

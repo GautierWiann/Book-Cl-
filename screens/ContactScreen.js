@@ -42,21 +42,21 @@ export default function ContactScreen() {
             <div className={styles.slides}>
                 <div className={styles.glassmorph}>
                     <div className='row' >
-                        <div className={styles.formGroup} >
+                        <div className={styles.formGroup} style={{width :'45%'}} >
                             <input type="input" className={styles.formField} placeholder="Name" required="" />
                             <label for="name" className={styles.formLabel} >Nom</label>
                         </div>
-                        <div className={styles.formGroup} >
+                        <div className={styles.formGroup} style={{width :'45%'}}>
                             <input type="input" className={styles.formField} placeholder="Name" required="" />
                             <label for="name" className={styles.formLabel} >Prénom</label>
                         </div>
                     </div>
                     <div className='row'>
-                        <div className={styles.formGroup} >
+                        <div className={styles.formGroup} style={{width :'45%'}}>
                             <input type="email" className={styles.formField} placeholder="Mail" required="" />
                             <label for="name" className={styles.formLabel} >Mail</label>
                         </div>
-                        <div className={styles.formGroup} >
+                        <div className={styles.formGroup} style={{width :'45%'}}>
                             <input type="input" className={styles.formField} placeholder="0688188520" required="" />
                             <label for="name" className={styles.formLabel} >Téléphone</label>
                       

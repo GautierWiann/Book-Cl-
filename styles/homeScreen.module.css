@@ -1,14 +1,4 @@
-#secondScreen {
-    position:absolute;
-    top: 100vh;
-    height: 100vh;
-    width: 102vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%); 
-    /* z-index: 3; */
-}
+
 
 
 #parallax {
@@ -42,7 +32,6 @@
   }
 
 #parallax2 {   
-    min-height: 90vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -54,7 +43,7 @@
     background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);    
     width: 102vw;
     height:200vh;
-    perspective: 1px;
+    /* perspective: 1px; */
     /* margin-top: -2vh; */
     margin-bottom: -2vh;
     margin-left: -2vw;
@@ -92,20 +81,7 @@
     opacity: 1 !important;
   }
 
-#title {
-    position: absolute;
-    font-size: 14vh;
-    font-weight: 1000;
-    text-shadow: 1px 5px 10px black;;
-    margin-top: 35%;
-    margin-right: -22%;
-    /* line-height: 120px; */
-    /* margin-top: 20%; */
-    color: #fdfffc;
-    text-align: right;
-    transform: translateZ(-5px) ;
-    font-family: "Wanderer";
-}
+
 
 /* .image {
      position: absolute; 
@@ -141,38 +117,117 @@
     left:20vw;
     transform: translateZ(-13px) scale(2.4)
 }
-  
-@media only screen and (max-width: 1024px) { 
-    #fond {
-        height: 45vh;
-        border-bottom: 3px solid #fff ; 
-    }
-    #parallax {
-        height: 50vh;
-    }
 
-    #parallax2{
-        height: 170vh !important;
-        display: flex;
-        flex-direction: column;
-        justify-content:space-around;
+@media only screen and (min-width: 1024px) { 
+    #parallaxMob {
+        display: none;
+
     }
 
     #secondScreen {
+        position:absolute;
+        top: 100vh;
+        height: 100vh;
+        width: 102vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%); 
+        /* z-index: 3; */
+    }
+
+    #page {
+        background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);    
+        width: 102vw;
+        height:200vh;
+        /* perspective: 1px; */
+        /* margin-top: -2vh; */
+        margin-bottom: -2vh;
+        margin-left: -2vw;
+        perspective-origin: center center;
+        overflow: hidden;
+    }
+
+    #title {
+        position: absolute;
+        font-size: 14vh;
+        font-weight: 1000;
+        text-align: right;
+        text-shadow: 1px 5px 10px black;;
+        margin-top: 35%;
+        margin-right: -22%;
+        /* line-height: 120px; */
+        /* margin-top: 20%; */
+        font-family: "Wanderer";
+        color: #fdfffc;
+        transform: translateZ(-5px) ;
+    }
+
+    #parallax2 {   
+        min-height: 90vh;
+    }
+}
+  
+@media only screen and (max-width: 1024px) { 
+    #fond {
+        height: 55vh ;
+        border-bottom: 3px solid #fff ; 
+    }
+    #parallaxMob {
+        width: 100vw;
+        margin-left: 2vw;
+        background-size:cover;
+        background-image: url("https://res.cloudinary.com/dpxxyz9ra/image/upload/v1698656592/bh5i4bccc2essmlbgfiz.png");
+        height: 40vh ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;;
+        align-items: flex-end;
+        
+        border-bottom: 3px solid #fff ; 
+    }
+.card {
+    margin-right: 3vw;
+    margin-left: 3vw;
+}
+    #parallax2{
+        margin-top: 5vh;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        height: 40vh;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        width: 100vw;
+        overflow-x: scroll;
+        /* scrollbar-s: 0px; */
+    }
+
+    #secondScreen {
+        display: flex;
         flex-direction: column-reverse;
-        height: 185vh;
-        top:30vh !important;
+        justify-content: space-between;
+        height: 60vh;
     }
     #wrapper {
         margin-top: -15vh;
         height: 45vh !important;
+        display: none;
     }
     #title{
-        font-size: 50px;
+        font-size: 28px;
+        margin-right: 2vw;
+        font-family: "Wanderer";
+        color: #fdfffc;
+        font-weight: 1000;
+        text-align: right;
+        text-shadow: 1px 5px 10px black;;
     }
 
     #page {
-        overflow-y: visible !important;
+        overflow: hidden;
+       width: 102vw;
+       height: fit-content !important;
     }
     
 }

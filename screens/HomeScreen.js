@@ -73,17 +73,18 @@ export default function HomeScreen() {
         const windowWidth = window.innerWidth;
         const windowHeight = window.innerHeight;
         const aspectRatio = windowWidth / windowHeight;
-
-        if (aspectRatio >= 1.85 && aspectRatio <= 2.15) {
-            setShow(true);
-        } else {
-            for (const reference of refs) {
-                reference.current.classList.add("slide");
+        if (windowWidth > 1024) {
+            if (aspectRatio >= 1.85 && aspectRatio <= 2.15) {
+                setShow(true);
+            } else {
+                for (const reference of refs) {
+                    reference.current.classList.add("slide");
+                }
+                setShow(false);
+                setHeader(1)
             }
-            setShow(false);
-            setHeader(1)
-        }
-    };
+        };
+    }
 
 
     if (typeof window !== "undefined") {
@@ -113,6 +114,9 @@ export default function HomeScreen() {
 
                 </div>}
             </div>
+            <div id={styles.parallaxMob}>
+                <p id={styles.title}>Clément Thirard <br />Photographe d'interieur</p>
+            </div>
             <div
                 id={styles.secondScreen}
                 ref={refDown}
@@ -120,9 +124,9 @@ export default function HomeScreen() {
                 <Header header={header} />
 
                 <div id={styles.parallax2} ref={ref}>
-                    <div ref={refCard1} id={styles.first}><a href="/contact" style={{textDecoration : "none", color :'black'}}><CardHomeChoice title="contact" url={"https://res.cloudinary.com/dpxxyz9ra/image/upload/v1698656593/msalxt9o9g20z7kyncxp.png"} desc="La première étape pour mener à bien votre projet photo" /></a></div>
-                    <div ref={refCard2} id={styles.second}><a href="/portfolio" style={{textDecoration : "none", color :'black'}}><CardHomeChoice title="portfolio" url={"https://res.cloudinary.com/dpxxyz9ra/image/upload/v1698655794/ivjolvgok1owt6ffwbwz.jpg"} desc={"Cliquez ici pour découvrir mes derniers projets photo"} /></a></div>
-                    <div ref={refCard3} id={styles.third}> <a href="/propos" style={{textDecoration : "none", color :'black'}}> <CardHomeChoice title="a propos" url={"https://res.cloudinary.com/dpxxyz9ra/image/upload/v1698655789/bft3gkpufkdlx3qzx0ya.jpg"} /></a></div>
+                    <div ref={refCard1} className={styles.card} id={styles.first}><a href="/contact" style={{ textDecoration: "none", color: 'black' }}><CardHomeChoice title="contact" url={"https://res.cloudinary.com/dpxxyz9ra/image/upload/v1698656593/msalxt9o9g20z7kyncxp.png"} desc="La première étape pour mener à bien votre projet photo" /></a></div>
+                    <div ref={refCard2} className={styles.card} id={styles.second}><a href="/portfolio" style={{ textDecoration: "none", color: 'black' }}><CardHomeChoice title="portfolio" url={"https://res.cloudinary.com/dpxxyz9ra/image/upload/v1698655794/ivjolvgok1owt6ffwbwz.jpg"} desc={"Cliquez ici pour découvrir mes derniers projets photo"} /></a></div>
+                    <div ref={refCard3} className={styles.card} id={styles.third}> <a href="/propos" style={{ textDecoration: "none", color: 'black' }}> <CardHomeChoice title="a propos" url={"https://res.cloudinary.com/dpxxyz9ra/image/upload/v1698655789/bft3gkpufkdlx3qzx0ya.jpg"} /></a></div>
                 </div>
 
             </div>
