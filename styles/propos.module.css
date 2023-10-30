@@ -1,0 +1,41 @@
+
+
+#container {
+    overflow-x: hidden;
+    width: 100vw;
+    min-height: 100vh;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%); 
+   
+    /* fffcf2 */
+}
+
+#backgroundImage{
+    background: #fdfffc;
+    width: 100%;
+    height: 55vh;
+    border-radius: 4px;
+}
+
+.image {
+    margin-left: 1vw;
+    margin-top: 3vh;
+    width: 100%;
+    height: 55vh;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: rgba(235, 235, 237, 0.561) 0px 4px 10px, rgba(235, 235, 237, 0.186) 0px 0px 18px;
+}
+
+.row {
+    width : 105vw; 
+    margin-top :5vh;
+}
+
+@media only screen and (max-width: 770px) {
+    .row {
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+    }
+  
+  }

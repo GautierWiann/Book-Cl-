@@ -1,0 +1,104 @@
+@media only screen and (max-width: 1024px) {
+    #title {
+        font-size: 28px !important;
+    }
+
+    #buttonsDiv{
+        display: none !important;
+    }
+  
+  }
+  
+  #container {
+    width: 0vw;
+    height: 0vh;
+    opacity: 0;
+    background: #fdfffc;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition:
+    width 1s,
+    height 1s,
+    opacity 1s, ;
+    /* position:sticky;
+    top: 0; */
+}
+
+#container[header='1']{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 3vh;
+    padding-bottom: 3vh !important;
+    width: 102vw;
+    min-height: fit-content;
+    height: 10vh;
+    opacity: 1;
+}
+
+#logo {
+height: 8vh;
+filter:saturate(0%);
+}
+
+
+#buttonsDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 25vw;
+    font-size: 1.3vw;
+    margin-left: 10vw;
+}
+
+.buttonDiv{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.buttonSpan {
+    margin-top: 5px;
+    width: 0;
+ border-bottom: black 1px solid
+}
+.buttonDiv:hover .buttonSpan{
+    width: 120%;
+    transition: 
+    width 1s;
+ border-bottom: black 2px solid;
+}
+
+#title {
+    font-family: "Wanderer";
+    height: fit-content;
+    font-size: 5vh;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#logoDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 10vh;
+    margin-top: 2vh;
+    margin-left: 4vw;
+}
+
+#iconDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 10vh;
+    margin-right: 2vw;
+    font-weight: 300;
+}
+
+.icon{
+    cursor: pointer;
+    margin-right: 1vw;
+}

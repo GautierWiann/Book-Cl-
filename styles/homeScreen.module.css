@@ -1,0 +1,178 @@
+#secondScreen {
+    position:absolute;
+    top: 100vh;
+    height: 100vh;
+    width: 102vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%); 
+    /* z-index: 3; */
+}
+
+
+#parallax {
+    /* The image used */
+    /* background-image: url("../public/fond.png"); */
+
+    /* Set a specific height */
+    height: 100vh;
+    margin-top: -1vh;
+    width: auto;
+    /* Create the parallax scrolling effect */
+    /* background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;;
+    align-items: flex-end;
+    transform-style: preserve-3d;
+    z-index: -1;
+    position: relative;
+    
+}
+
+#wrapper {
+    height: 102vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+  }
+
+#parallax2 {   
+    min-height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vh 4vw;
+}
+
+#page {
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);    
+    width: 102vw;
+    height:200vh;
+    perspective: 1px;
+    /* margin-top: -2vh; */
+    margin-bottom: -2vh;
+    margin-left: -2vw;
+    perspective-origin: center center;
+    overflow: hidden;
+}
+
+
+#first {
+    transform: translateX(-150%);
+    opacity: 0;
+    transition: 
+    transform 2s,
+    opacity 4s,
+}
+
+#second {
+    transform: translateY(-25%);
+    opacity: 0;
+    transition: 
+    transform 1s,
+    opacity 1s,
+}
+
+#third {
+    transform: translateX(150%);
+    opacity: 0;
+    transition: 
+    transform 2s,
+    opacity 4s,
+}
+
+.slide {
+    transform: translate(0,0) !important;
+    opacity: 1 !important;
+  }
+
+#title {
+    position: absolute;
+    font-size: 14vh;
+    font-weight: 1000;
+    text-shadow: 1px 5px 10px black;;
+    margin-top: 35%;
+    margin-right: -22%;
+    /* line-height: 120px; */
+    /* margin-top: 20%; */
+    color: #fdfffc;
+    text-align: right;
+    transform: translateZ(-5px) ;
+    font-family: "Wanderer";
+}
+
+/* .image {
+     position: absolute; 
+} */
+
+#fond {
+    /* height: 121.4vh; */
+    width: 100%;
+  object-fit: cover;
+  transform: translateZ(-15px) scale(2.5)
+}
+
+
+#violon {
+    position: fixed;
+    top: 122vh;
+    left:0vw;
+    margin-left: -30vw;
+    height: 35%;
+    transform: translateZ(-11px) scale(2.4)
+}
+
+#tableSpan{
+    height: 100%;
+    width: 100%;
+    
+}
+
+#table {
+    position: fixed;
+    top: 160vh;
+   height: 32%;
+    left:20vw;
+    transform: translateZ(-13px) scale(2.4)
+}
+  
+@media only screen and (max-width: 1024px) { 
+    #fond {
+        height: 45vh;
+        border-bottom: 3px solid #fff ; 
+    }
+    #parallax {
+        height: 50vh;
+    }
+
+    #parallax2{
+        height: 170vh !important;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+    }
+
+    #secondScreen {
+        flex-direction: column-reverse;
+        height: 185vh;
+        top:30vh !important;
+    }
+    #wrapper {
+        margin-top: -15vh;
+        height: 45vh !important;
+    }
+    #title{
+        font-size: 50px;
+    }
+
+    #page {
+        overflow-y: visible !important;
+    }
+    
+}

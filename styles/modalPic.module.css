@@ -1,0 +1,196 @@
+@media only screen and (max-width: 1024px) { 
+  .modalOverlay {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   }
+
+  
+  .image {
+    max-width: 74vw !important;
+  }
+
+  .icon {
+  font-size: 14px !important;
+}
+
+.arrowDiv {
+  height: 30px !important;
+  width: 30px !important;
+}
+
+.iconBack {
+  margin-left: -50% !important;
+  opacity: 0;
+  
+  font-size: 14px !important;
+}
+
+.arrowDivRight:hover .iconBack {
+  transform: translateX(120%);
+  font-size: 16px !important;
+}
+.arrowDivRight:hover .iconFront {
+  transform: translateX(140%);
+  font-size: 16px !important;
+}
+
+.arrowDivLeft:hover .iconBack {
+  transform: translateX(120%);
+  font-size: 16px !important;
+}
+.arrowDivLeft:hover .iconFront {
+  transform: translateX(140%);
+  font-size: 16px !important;
+}
+}
+
+@media only screen and (min-width: 1024px) { 
+
+  .icon {
+  font-size: 24px !important;
+}
+
+
+.iconBack {
+  margin-left: -50%;
+  opacity: 0;
+  
+  font-size: 20px !important;
+}
+
+.arrowDivRight:hover .iconBack {
+  transform: translateX(130%);
+  font-size: 24px !important;
+}
+.arrowDivRight:hover .iconFront {
+  transform: translateX(140%);
+  font-size: 20px !important;
+}
+
+.arrowDivLeft:hover .iconBack {
+  transform: translateX(130%);
+  font-size: 24px !important;
+}
+.arrowDivLeft:hover .iconFront {
+  transform: translateX(140%);
+  font-size: 20px !important;
+}
+
+}
+
+.modalOverlay {
+  /* display: none; */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: auto;
+}
+
+/* Styles for the modal */
+.modal {
+  overflow: hidden;
+  display: block;
+  position: relative;
+  margin: 5vh auto;
+  max-width: fit-content !important;
+  max-height: fit-content !important;
+  background-color: #fff;
+  padding: 0.5vw;
+}
+
+/* Styles for the close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.image {
+    object-fit:cover !important;
+  max-width: 80vw;
+  max-height: 80vh !important;
+  border-radius: 5px;
+}
+
+.arrowDiv {
+  position: fixed;
+  color: #fff;
+  border-color: #fff ;
+  border-style: solid;
+  border-width: 2px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.arrowDivRight {
+  top: 50vh;
+  right:2vw;
+}
+.arrowDivLeft {
+  top: 50vh;
+  left:2vw;
+  transform: rotate(180deg);
+}
+
+.icon {
+  color: #fff;
+}
+.iconBack {
+  opacity: 0;
+}
+
+.arrowDivRight:hover .iconBack {
+  /* transform: translateX(130%); */
+  transition: 
+  transform 1s,
+  opacity 2s,
+  font-size 2s;
+  opacity: 1;
+  
+  /* font-size: 24px !important; */
+}
+.arrowDivRight:hover .iconFront {
+  /* transform: translateX(140%); */
+  transition: 
+  transform 1s,
+  opacity 2s,
+  font-size 2s;
+  opacity: 0;
+  
+  /* font-size: 20px !important; */
+}
+
+.arrowDivLeft:hover .iconBack {
+  /* transform: translateX(130%); */
+  transition: 
+  transform 1s,
+  opacity 2s,
+  font-size 2s;
+  opacity: 1;
+  
+  /* font-size: 24px !important; */
+}
+.arrowDivLeft:hover .iconFront {
+  /* transform: translateX(140%); */
+  transition: 
+  transform 1s,
+  opacity 2s,
+  font-size 2s;
+  opacity: 0;
+/*   
+  font-size: 20px !important; */
+}

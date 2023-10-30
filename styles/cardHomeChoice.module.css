@@ -1,0 +1,134 @@
+@media only screen and (max-width: 1024px) { 
+    .container{
+        width: 70vw !important;
+        height: 70vw !important;
+        margin-top: 5vh;
+    }
+
+    .container:hover {
+        height: 95vw !important;
+        width: 85vw !important;
+    }
+
+    .title {
+        font-size: 17px !important;
+        font-weight: 600 !important;
+    }
+    .container:hover .desc {
+        display: block;
+        opacity: 1;
+        font-size: 16px !important;
+        margin-bottom: 12% !important;
+    }
+
+    .container:hover .title {
+        font-size: 20px !important;
+        margin-bottom: 34% !important;
+    }
+
+}
+.container {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    height: 60vh;
+    width: 25vw;
+    /* background-color: white; */
+    transition:
+        width 1s,
+        height 1s, ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.image {
+    height: 100%;
+    object-fit: contain;
+    position: fixed;
+    
+}
+.glassmorph {
+    background: rgba(234, 234, 244, 0.6);
+    backdrop-filter: blur(0.5px);
+    -webkit-backdrop-filter: blur(0.5px);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 0.4vh solid #000;
+    height: 20%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    transition:
+        height 1s,
+        background 1s,
+        backdrop-filter 1s,
+        -webkit-backdrop-filter 1s;
+}
+
+
+.title {
+    border: 0.4vh solid #000;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    background-color: #fdfffc;
+    padding: 1vh 0.75vw;
+    height: 10%;
+    width: 45%;
+    min-width: fit-content;
+    z-index: 2;
+    margin-bottom: 17%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition:
+        margin-bottom 1s,
+        font-size 1s;
+}
+
+.desc {
+    z-index: 2;
+    position: absolute;
+    height: 6%;
+    width: 70%;
+    margin-bottom: 5%;
+    opacity: 0;
+    font-size: 10px;
+    transition:
+        opacity 3s,
+        margin-bottom 1s,
+        font-size 1s;
+    text-align: center;
+    word-break: break-word;
+}
+
+
+.container:hover {
+    height: 80vh;
+    width: 35vw;
+}
+
+.container:hover .title {
+    font-size: 30px;
+    margin-bottom: 31%;
+}
+
+.container:hover .desc {
+    display: block;
+    opacity: 1;
+    font-size: 24px;
+    margin-bottom: 15%;
+}
+
+.container:hover .glassmorph {
+    background: rgba(245, 245, 251, 0.864);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    height: 33%;
+}

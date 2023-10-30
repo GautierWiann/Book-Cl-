@@ -1,0 +1,628 @@
+@media only screen and (max-width: 1024px) { 
+    .glassmorph  {
+        
+    min-width: 200px !important;
+        top: 16vh !important;
+        height: 60vh !important;
+        max-width: 450px;
+        width:80vw !important;
+       left: 10vw !important;
+       padding: 3vh 0vw 3vh 6vw !important;
+    }
+
+    #messageInputField {
+        width: 80% !important;
+        max-width: 1000px !important;
+    }
+    
+    
+  #contactInputs{
+    display: flex;
+    flex-direction: row;
+  }
+    #messageInput {
+      height: 11vh !important;
+      max-width: 70vw !important;
+    }
+      
+      .formField {
+        width: 80% !important;
+        font-size: 14px !important;
+       
+      }
+      
+     
+      .formField:placeholder-shown ~ .formLabel {
+        font-size: 15px !important;
+       
+      }
+      
+      .formLabel {
+       
+        font-size: 15px !important;
+       
+      }
+      
+     
+      
+      .formField:focus ~ .formLabel {
+       
+        font-size: 17px !important;
+      }
+      
+    
+    
+    #container{
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        width: 100vw;
+    }
+ 
+}
+
+@media only screen and (min-width: 1024px) { 
+    
+    #contactInputs{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+      }
+    #messageInputField {
+        width: 80% !important;
+        max-height: 13vh;
+        max-width: 22vw;
+    }
+}
+
+.image {
+    width: 100vw;
+    height: 120vh;
+    object-fit: cover;
+    position: absolute;
+}
+
+.glassmorph  {
+    overflow-y: scroll;
+    z-index: 1;
+    position:absolute;
+    top:22.5vh;
+    left: 15vw;
+    height: 55vh;
+    width: 25vw;
+    min-width: 450px;
+    background: rgba(108, 110, 114, 0.6);
+padding: 2vh 2vw;
+backdrop-filter: blur( 2.5px );
+-webkit-backdrop-filter: blur( 2.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+overflow-y: scroll;
+}
+
+#messageInput {
+    max-width: 21vw;
+    width: 100%;
+    /* height: 10vh; */
+}
+.formGroup {
+    position: relative;
+    padding: 20px 0 0;
+    width: 100%;
+    max-width: 180px;
+  }
+  
+  .formField {
+    font-family: inherit;
+    width: 90%;
+    border: none;
+    border-bottom: 2px solid #fdfffc;
+    outline: 0;
+    font-size: 17px;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  
+  .formField::placeholder {
+    color: transparent;
+  }
+  
+  .formField:placeholder-shown ~ .formLabel {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .formLabel {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #fdfffc;
+    pointer-events: none;
+  }
+  
+  .formField:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #e9c98e, #e9d8a6);
+    border-image-slice: 1;
+  }
+  
+  .formField:focus ~ .formLabel {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 19px;
+    font-weight: 800;
+    color: #e9d8a6;
+    font-weight: 700;
+  }
+  
+  /* reset input */
+  .formField:required, .formField:invalid {
+    box-shadow: none;
+  }
+
+#container{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100vw;
+}
+
+.slides {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    height: 25vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
+}
+
+#section0 > #image0 {
+    animation: slidingTop0 20s infinite ;
+}
+
+#section0 > #image1 {
+    animation: slidingTop1 20s infinite ;
+}
+
+#section0 > #image2 {
+    animation: slidingTop2 20s infinite ;
+}
+
+
+#section1 > #image0 {
+    animation: slidingMiddleTop0 20s infinite ;
+}
+
+#section1 > #image1 {
+    animation: slidingMiddleTop1 20s infinite ;
+}
+#section1 > #image2 {
+    animation: slidingMiddleTop2 20s infinite ;
+}
+
+
+#section2 > #image0 {
+    animation: slidingMiddleBottom0 20s infinite ;
+}
+
+#section2 > #image1 {
+    animation: slidingMiddleBottom1 20s infinite ;
+}
+#section2 > #image2 {
+    animation: slidingMiddleBottom2 20s infinite ;
+}
+
+
+
+#section3 > #image0 {
+    animation: slidingBottom0 20s infinite ;
+}
+
+#section3 > #image1 {
+    animation: slidingBottom1 20s infinite ;
+}
+#section3 > #image2 {
+    animation: slidingBottom2 20s infinite ;
+}
+
+.MiddleTop {
+top : -50vh;
+}
+
+.MiddleBottom {
+    top : -75vh;
+}
+
+.Bottom {
+    top : -100vh;
+}
+
+.Top {
+    top : -25vh;
+}
+
+
+@keyframes slidingTop0 {
+    20% {
+        left: 0vw
+    }
+
+    25%{
+        left: -8vw
+    }
+
+    40% {
+        left: -100vw;
+    }
+    /* 75% {
+        left: -50vw;
+    }
+
+    90% {
+        left: -90vw;
+    } */
+
+    97% {
+        left: -100vw;
+    }
+    100% {
+        left: 0vw
+    }
+}
+@keyframes slidingTop1 {
+    20% {
+        left: 100vw
+    }
+
+    25%{
+        left: 92vw
+    }
+
+    40% {
+        left: 0vw;
+    }
+    60% {
+        left: 0vw;
+    }
+
+    65% {
+        left: -8vw;
+    }
+
+    80% {
+        left: -100vw;
+    }
+
+    97% {
+        left: -100vw;
+    }
+    100% {
+        left: 100vw
+    }
+}
+@keyframes slidingTop2 {
+    20% {
+        left: 200vw
+    }
+
+    25%{
+        left: 192vw
+    }
+
+    40% {
+        left: 100vw;
+    }
+    60% {
+        left: 100vw;
+    }
+
+    65% {
+        left: 92vw;
+    }
+
+    80% {
+        left: 0vw;
+    }
+
+    97% {
+        left: -0vw;
+    }
+
+    100% {
+        left: 200vw
+    }
+}
+
+@keyframes slidingMiddleTop0 {
+    20% {
+        left: 0vw
+    }
+
+    25%{
+        left: -13vw
+    }
+
+    40% {
+        left: -100vw;
+    }
+    /* 75% {
+        left: -50vw;
+    }
+
+    90% {
+        left: -90vw;
+    } */
+
+    97% {
+        left: -100vw;
+    }
+    100% {
+        left: 0vw
+    }
+    
+}
+@keyframes slidingMiddleTop1 {
+    20% {
+        left: 100vw
+    }
+
+    25%{
+        left: 87vw
+    }
+
+    40% {
+        left: 0vw;
+    }
+    60% {
+        left: 0vw;
+    }
+
+    65% {
+        left: -13vw;
+    }
+
+    80% {
+        left: -100vw;
+    }
+
+    97% {
+        left: -100vw;
+    }
+    100% {
+        left: 100vw
+    }
+}
+
+@keyframes slidingMiddleTop2 {
+    20% {
+        left: 200vw
+    }
+
+    25%{
+        left: 187vw
+    }
+
+    40% {
+        left: 100vw;
+    }
+    60% {
+        left: 100vw;
+    }
+
+    65% {
+        left: 87vw;
+    }
+
+    80% {
+        left: 0vw;
+    }
+
+    97% {
+        left: -0vw;
+    }
+
+    100% {
+        left: 200vw
+    }
+}
+
+@keyframes slidingMiddleBottom0 {
+    20% {
+        left: 0vw
+    }
+
+    25%{
+        left: -18vw
+    }
+
+    40% {
+        left: -100vw;
+    }
+    /* 75% {
+        left: -50vw;
+    }
+
+    90% {
+        left: -90vw;
+    } */
+
+    97% {
+        left: -100vw;
+    }
+    100% {
+        left: 0vw
+    }
+}
+@keyframes slidingMiddleBottom1 {
+    20% {
+        left: 100vw
+    }
+
+    25%{
+        left: 82vw
+    }
+
+    40% {
+        left: 0vw;
+    }
+    60% {
+        left: 0vw;
+    }
+
+    65% {
+        left: -18vw;
+    }
+
+    80% {
+        left: -100vw;
+    }
+
+    97% {
+        left: -100vw;
+    }
+    100% {
+        left: 100vw
+    }
+}
+
+@keyframes slidingMiddleBottom2 {
+    20% {
+        left: 200vw
+    }
+
+    25%{
+        left: 182vw
+    }
+
+    40% {
+        left: 100vw;
+    }
+    60% {
+        left: 100vw;
+    }
+
+    65% {
+        left: 82vw;
+    }
+
+    80% {
+        left: 0vw;
+    }
+
+    97% {
+        left: -0vw;
+    }
+
+    100% {
+        left: 200vw
+    }
+}
+@keyframes slidingBottom0 {
+    20% {
+        left: 0vw
+    }
+
+    25%{
+        left: -23vw
+    }
+
+    40% {
+        left: -100vw;
+    }
+    /* 75% {
+        left: -50vw;
+    }
+
+    90% {
+        left: -90vw;
+    } */
+
+    97% {
+        left: -100vw;
+    }
+    100% {
+        left: 0vw
+    }
+}
+@keyframes slidingBottom1 {
+    20% {
+        left: 100vw
+    }
+
+    25%{
+        left: 77vw
+    }
+
+    40% {
+        left: 0vw;
+    }
+    60% {
+        left: 0vw;
+    }
+
+    65% {
+        left: -23vw;
+    }
+
+    80% {
+        left: -100vw;
+    }
+
+    97% {
+        left: -100vw;
+    }
+    100% {
+        left: 100vw
+    }
+}
+
+@keyframes slidingBottom2 {
+    20% {
+        left: 200vw
+    }
+
+    25%{
+        left: 177vw
+    }
+
+    40% {
+        left: 100vw;
+    }
+    60% {
+        left: 100vw;
+    }
+
+    65% {
+        left: 77vw;
+    }
+
+    80% {
+        left: 0vw;
+    }
+
+    97% {
+        left: -0vw;
+    }
+
+    100% {
+        left: 200vw
+    }
+}
