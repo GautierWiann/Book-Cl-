@@ -31,7 +31,7 @@ export default function PortfolioScreen() {
     };
 
     const openModal = (i) => {
-        setImage(images[i])
+        setImage(images[i].url)
         setIndex(i)
         setModalOpen(true);
     };
