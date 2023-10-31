@@ -1,3 +1,7 @@
+
+@import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
+
+
 @media only screen and (max-width: 1024px) { 
   .image {
     grid-row: span 1 !important;
@@ -61,4 +65,54 @@ justify-items: center;
     opacity: .7;
   }
 
+
+  .ChoicesDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-height: 80vh;
+    align-items: center;
+  }
+  
+  .choice {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    width: 33vw;
+    height: 40vh; 
+    padding: 0vh 2vw;
+  }
+
+  .choiceTitle {
+    font-weight: 8000;
+    text-align: right;
+    text-shadow: 1px 5px 10px black;
+    font-size: 38px;
+    font-family: "Comfortaa";
+        color: #fdfffc;
+    z-index: 2;
+    position: absolute;
+  }
+  
+  .choice .imageChoice {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+
+  .choice:hover .imageChoice:nth-of-type(2) {
+    transform:  translate(8vw, 10vh);
+    transition: transform 0.3s ease;
+  } 
+  .choice:hover .imageChoice:nth-of-type(3) {
+    transform:  translate(4vw, 5vh);
+    transition: transform 0.3s ease;
+  }
   
