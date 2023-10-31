@@ -24,12 +24,12 @@ export default function ProposScreen() {
                     </div>
                 </Col>
                 <Col md={{ size: 3, offset: 3 }} xs={{ size: 10, offset:1 }} xl={{ size: 4, offset: 2 }}>
-                <p> Photographe spécialisé dans le domaine de l'architecture d'intérieur</p>
+                <p className={styles.title}> Photographe spécialisé dans le domaine de l'architecture d'intérieur</p>
 
-<p>Mon objectif: raconter le plus fidèlement possible l'histoire que vous avez écrite avec votre projet. J'ai une très grande sensibilité sur les textures, les ambiances lumineuses et les perspectives que les architectes et décorateur.ices créent.</p>
+<p className={styles.desc}>Mon objectif: raconter le plus fidèlement possible l'histoire que vous avez écrite avec votre projet. J'ai une très grande sensibilité sur les textures, les ambiances lumineuses et les perspectives que les architectes et décorateur.ices créent.</p>
 
 
-<p>Un seul léimotiv: la lumière naturelle</p></Col>
+<p className={styles.desc}>Un seul léimotiv: la lumière naturelle</p></Col>
             </Row>
             {/* </Container> */}
         </div>

@@ -1,6 +1,9 @@
 
 @import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
 
+.title {
+    font-size: 18px;
+}
 
 #container {
     overflow-x: hidden;
