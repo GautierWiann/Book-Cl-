@@ -24,9 +24,12 @@ export default function ProposScreen() {
                     </div>
                 </Col>
                 <Col md={{ size: 3, offset: 3 }} xs={{ size: 10, offset:1 }} xl={{ size: 4, offset: 2 }}>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </Col>
+                <p> Photographe spécialisé dans le domaine de l'architecture d'intérieur</p>
+
+<p>Mon objectif: raconter le plus fidèlement possible l'histoire que vous avez écrite avec votre projet. J'ai une très grande sensibilité sur les textures, les ambiances lumineuses et les perspectives que les architectes et décorateur.ices créent.</p>
+
+
+<p>Un seul léimotiv: la lumière naturelle</p></Col>
             </Row>
             {/* </Container> */}
         </div>
