@@ -38,14 +38,14 @@ export default function PortfolioScreen() {
 
     const forward = () => {
         if (index < images.length - 1) {
-            setImage(images[index + 1])
+            setImage(images[index + 1].url)
             setIndex(index + 1)
         }
     }
 
     const back = () => {
         if (index > 0) {
-            setImage(images[index - 1])
+            setImage(images[index - 1].url)
             setIndex(index - 1)
         }
     }
